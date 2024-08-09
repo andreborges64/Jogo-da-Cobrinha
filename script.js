@@ -16,9 +16,16 @@ let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `Recorde: ${highScore}`;
 
 const updateFoodPosition = () => {
-    // Jogando para posições aleatórias a comida
-    foodX = Math.floor(Math.random() * 30) + 1;
-    foodY = Math.floor(Math.random() * 30) + 1;
+    let positionIsValid = false;
+
+    while (!positionIsValid) {
+        // Gera uma nova posição aleatória para a comida
+        foodX = Math.floor(Math.random() * 30) + 1;
+        foodY = Math.floor(Math.random() * 30) + 1;
+
+        // Verifica se a nova posição não coincide com nenhuma parte do corpo da cobra
+        positionIsValid = !snakeBody.some(segment => segment[0] === foodX && segment[1] === foodY);
+    }
 }
 
 const handleGameOver = () => {
