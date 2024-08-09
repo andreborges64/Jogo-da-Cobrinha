@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Jogo da cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Jogo da Cobrinha</h1>
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Pontos: 0</span>
+            <span class="high-score">Recorde: 0</span>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 André Luiz Silva Dias Borges. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Card de Fim de Jogo -->
+    <div id="gameOverCard">
+        <div>
+            <h2>Game Over</h2>
+            <p>Sua pontuação: <span id="score"></span></p>
+            <button onclick="closeCard()">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
