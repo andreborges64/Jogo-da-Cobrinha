@@ -23,7 +23,7 @@ footer{
 }
 .wrapper {
   width: 65vmin;
-  height: 70vmin;
+  height: 65vmin;
   display: flex;
   overflow: hidden;
   flex-direction: column;
