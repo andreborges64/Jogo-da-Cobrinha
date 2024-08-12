@@ -53,7 +53,6 @@ footer{
 }
 .play-board .head {
   background: #03f51f;
-  border-radius: 15%;
 }
 
 .controls {
@@ -67,7 +66,6 @@ footer{
   color: #B8C6DC;
   width: calc(100% / 4);
   cursor: pointer;
-  border-right: 1px solid #171B26;
 }
 #gameOverCard {
   position: fixed;
@@ -91,7 +89,7 @@ footer{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-#gameOverCard button {
+#gameOverCard controls {
   background-color: #FF003D;
   color: white;
   border: none;
@@ -102,7 +100,7 @@ footer{
   margin-top: 10px;
 }
 
-#gameOverCard button:hover {
+#gameOverCard controls:hover {
   background-color: #e60023;
 }
 
@@ -122,10 +120,59 @@ footer{
     padding: 15px 27px;
   }
   .controls {
+    outline: none;
+    border: none;
     display: flex;
+    width: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin-top: 5%;
   }
   .controls i {
     padding: 15px 0;
     font-size: 1rem;
+  }
+  .controls div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .controls span {
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    padding: 8px 15px;
+    margin: 8px 4px;
+    display: inline-block;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #282828, #202020);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+      inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+      10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  }
+  .controls span::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #232323, #4a4a4a);
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
+      10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0009;
+  }
+  .controls span i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
   }
 }
