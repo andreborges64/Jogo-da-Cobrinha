@@ -23,7 +23,7 @@ footer{
 }
 .wrapper {
   width: 65vmin;
-  height: 65vmin;
+  height: 70vmin;
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -106,10 +106,10 @@ footer{
 
 @media screen and (max-width: 800px) {
   h1{
-    margin-bottom: 15%;
+    margin-bottom: 5%;
   }
   footer{
-    margin-top: 25%;
+    margin-top: 10%;
   }
   .wrapper {
     width: 90vmin;
@@ -127,7 +127,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     background-color: transparent;
-    margin-top: 5%;
+    margin-top: 2.5%;
   }
   .controls i {
     padding: 15px 0;
