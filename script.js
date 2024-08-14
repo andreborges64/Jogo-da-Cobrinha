@@ -120,5 +120,5 @@ const initGame = () => {
 }
 
 updateFoodPosition();
-setIntervalId = setInterval(initGame, 150); // velocidade da cobra, quanto maior o número, mais lenta ela será.
+setIntervalId = setInterval(initGame, 175); // velocidade da cobra, quanto maior o número, mais lenta ela será.
 document.addEventListener("keyup", changeDirection);
