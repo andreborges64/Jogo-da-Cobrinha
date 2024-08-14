@@ -130,7 +130,9 @@ footer{
     margin-top: 2.5%;
   }
   .controls i {
-    padding: 15px 0;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-right: 23px;
     font-size: 1rem;
   }
   .controls div:first-child {
@@ -141,12 +143,12 @@ footer{
   .controls span {
     cursor: pointer;
     position: relative;
-    height: 80px;
-    width: 80px;
-    padding: 8px 15px;
-    margin: 8px 4px;
+    height: 40px;
+    width: 40px;
+    padding-left: 12px;
+    margin:4px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 100%;
     background: linear-gradient(180deg, #282828, #202020);
     box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
       inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
@@ -158,10 +160,10 @@ footer{
     position: absolute;
     top: 3px;
     left: 4px;
-    bottom: 14px;
-    right: 12px;
+    bottom: 3px;
+    right: 4px;
     background: linear-gradient(90deg, #232323, #4a4a4a);
-    border-radius: 10px;
+    border-radius: 100%;
     box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
       10px 5px 10px rgba(0, 0, 0, 0.15);
     border-left: 1px solid #0004;
@@ -171,7 +173,6 @@ footer{
   .controls span i {
     position: relative;
     font-style: normal;
-    font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
   }
