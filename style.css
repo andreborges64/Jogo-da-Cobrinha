@@ -105,10 +105,7 @@ footer{
 }
 
 @media screen and (max-width: 800px) {
-  h1{
-    margin-bottom: 5%;
-  }
-  footer{
+    footer{
     margin-top: 10%;
   }
   .wrapper {
@@ -127,7 +124,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     background-color: transparent;
-    margin-top: 2.5%;
+    margin-top: 0.5%;
   }
   .controls i {
     padding-top: 12px;
